@@ -1,5 +1,8 @@
-require "thats_what_she_said/version"
+require 'open-uri'
+require 'nokogiri'
+require 'pry'
 
-module ThatsWhatSheSaid
-  # Your code goes here...
-end
+
+require_relative "./thats_what_she_said/version"
+require_relative './thats_what_she_said/cli'
+require_relative './thats_what_she_said/quote'
