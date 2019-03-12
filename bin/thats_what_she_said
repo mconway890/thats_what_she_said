@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "thats_what_she_said"
+
+ThatsWhatSheSaid::CLI.new.call
