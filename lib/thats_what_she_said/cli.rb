@@ -10,6 +10,10 @@ class ThatsWhatSheSaid::CLI
     puts ""
     puts center("The Office Quotes Generator")
     puts ""
+    @quotes = ThatsWhatSheSaid::Quote.generate_quote
+    @quotes.each.with_index(1) do |quote,i|
+      puts " #{i}. #{quote.quote_text}"
+    end
   end
 
   def center(string, c = "-")
