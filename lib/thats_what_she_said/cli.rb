@@ -6,9 +6,9 @@ class ThatsWhatSheSaid::CLI
   end
 
   def welcome
-    puts center("Welcome to Thats What She Said!").upcase
+    puts center("Welcome to That's What She Said!").upcase
     puts ""
-    puts center("The Office Quotes Generator")
+    puts center("An Office Quotes Generator")
     puts ""
     @quotes = ThatsWhatSheSaid::Quote.generate_quote
     @quotes.each do |quote|
