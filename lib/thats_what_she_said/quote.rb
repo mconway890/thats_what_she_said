@@ -16,7 +16,7 @@ class ThatsWhatSheSaid::Quote
   def self.scrape_1
     doc = Nokogiri::HTML(open("https://www.imdb.com/title/tt0664521/quotes?ref_=tt_ql_trv_4"))
     quote = self.new
-    quote.quote_text = doc.search("div.sodatext").first.text
+    quote.quote_text = doc.search("div.sodatext").text
     quote
   end
 end
