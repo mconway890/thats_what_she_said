@@ -11,7 +11,7 @@ class ThatsWhatSheSaid::CLI
     puts center("The Office Quotes Generator")
     puts ""
     @quotes = ThatsWhatSheSaid::Quote.generate_quote
-    @quotes.each do |quote,i|
+    @quotes.each do |quote|
       puts " #{quote.quote_text}"
     end
     puts ""
